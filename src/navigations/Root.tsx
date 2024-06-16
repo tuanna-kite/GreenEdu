@@ -11,6 +11,7 @@ import QuizzScreen from "../screens/quizz-mode/QuizzScreen";
 import Detail from "../screens/detail/Detail";
 import PracticeDetail from "../screens/practice/PracticeDetail";
 import { UseTokenColor } from "../hook/UseTokenColor";
+import SplashScreen from "../screens/auth/SplashScreen";
 
 const Stack = createNativeStackNavigator<RootStackParams>();
 
@@ -25,10 +26,11 @@ const Root = () => {
           screenOptions={{
             headerShown: false,
           }}
+          initialRouteName="SplashScreen"
         >
+          <Stack.Screen name="SplashScreen" component={SplashScreen} />
           <Stack.Screen name="TabNavigation" component={TabNavigation} />
           <Stack.Screen name="Detail" component={Detail} />
-
           <Stack.Screen
             name="QuizzResult"
             component={QuizzResult}

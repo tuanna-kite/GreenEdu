@@ -1,4 +1,5 @@
 export type RootStackParams = {
+  SplashScreen:undefined;
   TabNavigation: undefined;
   QuizzResult: undefined;
   QuizzScreen: undefined;
