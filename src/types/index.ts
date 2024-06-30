@@ -8,5 +8,9 @@ export interface IData {
   image: string;
   title: string;
   description: string;
-  content?: string;
+  content?: Array<{
+    title: string;
+    body: string[];
+    image?: string;
+  }>;
 }

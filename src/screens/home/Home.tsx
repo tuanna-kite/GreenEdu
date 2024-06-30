@@ -1,30 +1,32 @@
 import { StyleSheet } from "react-native";
 import React from "react";
-import { ScrollView, VStack } from "@gluestack-ui/themed";
+import { Box, HStack, ScrollView, Text, VStack } from "@gluestack-ui/themed";
 import SlideImage from "./component/SlideImage";
-import { headerSlideData, basic } from "../../db/slide-data";
-import CardList from "./component/CardList";
-import { EDisplayType } from "../../types";
-import PopularList from "./component/PopularList";
+import { basic } from "../../db/slide-data";
+import CardItem from "./component/CardItem";
 
 type Props = {};
 
 const Home = (props: Props) => {
+  const data = basic;
   return (
-    <ScrollView showsVerticalScrollIndicator={false}>
+    <ScrollView flex={1} bg="$white" showsVerticalScrollIndicator={false}>
       <VStack flex={1} p={"$4"} gap={"$4"} bg="$white">
-        <SlideImage data={headerSlideData} />
-        <PopularList />
-        <CardList
-          title="Scratch Cơ bản"
-          data={basic}
-          displayType={EDisplayType.NORMAL}
-        />
-        <CardList
-          title="Scratch Nâng cao"
-          data={basic}
-          displayType={EDisplayType.NORMAL}
-        />
+        <HStack justifyContent="space-between" mb={"$4"}>
+          <Text fontWeight="$semibold" fontSize={"$xl"} color="$primary600">
+            Bài viết
+          </Text>
+          <Text fontWeight="$normal" fontSize={"$sm"} color="$textDark500">
+            Xem tất cả
+          </Text>
+        </HStack>
+        <HStack flexWrap="wrap" justifyContent="space-between">
+          {Object.values(data).map((item) => (
+            <Box key={item.id} mb={"$6"}>
+              <CardItem item={item} />
+            </Box>
+          ))}
+        </HStack>
       </VStack>
     </ScrollView>
   );

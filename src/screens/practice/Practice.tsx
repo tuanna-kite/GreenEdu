@@ -51,29 +51,28 @@ const Practice = ({ navigation }: Props) => {
     <VStack
       flex={1}
       gap={"$12"}
-      px={"$8"}
-      py={"$4"}
+      p={"$4"}
       justifyContent="space-between"
       bg="$white"
     >
       {Platform.OS == "android" && <StatusBar barStyle="light-content" />}
       <HStack flexWrap="wrap">
-        <Box w={"$1/2"}>
+        <Box w={"$1/2"} mb={"$4"}>
           <TouchableOpacity onPress={onPracticeDetail}>
             <PracticeCard />
           </TouchableOpacity>
         </Box>
-        <Box w={"$1/2"}>
+        <Box w={"$1/2"} mb={"$4"}>
           <TouchableOpacity onPress={onPracticeDetail}>
             <PracticeCard />
           </TouchableOpacity>
         </Box>
-        <Box w={"$1/2"}>
+        <Box w={"$1/2"} mb={"$4"}>
           <TouchableOpacity onPress={onPracticeDetail}>
             <PracticeCard />
           </TouchableOpacity>
         </Box>
-        <Box w={"$1/2"}>
+        <Box w={"$1/2"} mb={"$4"}>
           <TouchableOpacity onPress={onPracticeDetail}>
             <PracticeCard />
           </TouchableOpacity>

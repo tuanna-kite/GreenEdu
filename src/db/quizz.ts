@@ -16,6 +16,10 @@ export const quizzData: { [key: string]: QuizzData[] } = {
       ans: 1,
     },
   ],
-  medium: [],
-  hard: [],
+  medium: [
+
+  ],
+  hard: [
+    
+  ],
 };

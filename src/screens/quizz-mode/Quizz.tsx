@@ -19,7 +19,7 @@ const levels: LevelInfo[] = [
   { text: "Khó", level: "hard" },
 ];
 
-const OPTION_COLOR = ["#44EFB2", "#FFA800", "#FF516F"];
+const OPTION_COLOR = ["#78C819", "#FFA800", "#EF4444"];
 
 const Quizz = () => {
   const navigation = useNavigation<any>();
@@ -34,7 +34,7 @@ const Quizz = () => {
     >
       {Platform.OS == "android" && <StatusBar barStyle="light-content" />}
       <Image
-        source={require("../../assets/question_logo.png")}
+        source={require("../../assets/env/question_logo.png")}
         w="$full"
         height={200}
         resizeMode="contain"
@@ -53,7 +53,7 @@ const Quizz = () => {
               backgroundColor={OPTION_COLOR[index]}
               py={"$3"}
               alignItems="center"
-              rounded={"$lg"}
+              rounded={"$xl"}
             >
               <Text fontWeight="$semibold" color="$white" fontSize={"$2xl"}>
                 {info.text}
