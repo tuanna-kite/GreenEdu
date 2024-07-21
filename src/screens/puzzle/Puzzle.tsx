@@ -3,7 +3,7 @@ import React from "react";
 import { Box, Text, HStack, ScrollView, VStack } from "@gluestack-ui/themed";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { BottomRootParams } from "../../navigations/config";
-import { story } from "../../db/slide-data";
+import { EDataType, story } from "../../db/slide-data";
 import CardItem from "../home/component/CardItem";
 
 type Props = {} & NativeStackScreenProps<BottomRootParams, "Puzzle">;
@@ -15,7 +15,7 @@ const Puzzle = ({ navigation }: Props) => {
         <HStack flexWrap="wrap" justifyContent="space-between">
           {Object.values(story).map((item) => (
             <Box key={item.id} mb={"$6"}>
-              <CardItem item={item} />
+              <CardItem item={item} type={EDataType.STORY} />
             </Box>
           ))}
         </HStack>

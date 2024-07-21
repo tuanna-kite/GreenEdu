@@ -1,3 +1,5 @@
+import { ImageSourcePropType } from "react-native";
+
 export enum EDisplayType {
   NORMAL,
   LARGE,
@@ -5,10 +7,10 @@ export enum EDisplayType {
 
 export interface IData {
   id: number;
-  image: string;
+  image: ImageSourcePropType;
   title: string;
   description: string;
-  content?: Array<{
+  content: Array<{
     title: string;
     body: string[];
     image?: string;

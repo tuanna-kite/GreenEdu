@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 import React from "react";
 import { Box, HStack, ScrollView, Text, VStack } from "@gluestack-ui/themed";
 import SlideImage from "./component/SlideImage";
-import { basic } from "../../db/slide-data";
+import { basic, EDataType } from "../../db/slide-data";
 import CardItem from "./component/CardItem";
 
 type Props = {};
@@ -16,14 +16,19 @@ const Home = (props: Props) => {
           <Text fontWeight="$semibold" fontSize={"$xl"} color="$primary600">
             Bài viết
           </Text>
-          <Text fontWeight="$normal" fontSize={"$sm"} color="$textDark500">
+          <Text
+            display="none"
+            fontWeight="$normal"
+            fontSize={"$sm"}
+            color="$textDark500"
+          >
             Xem tất cả
           </Text>
         </HStack>
         <HStack flexWrap="wrap" justifyContent="space-between">
           {Object.values(data).map((item) => (
             <Box key={item.id} mb={"$6"}>
-              <CardItem item={item} />
+              <CardItem item={item} type={EDataType.BASIC} />
             </Box>
           ))}
         </HStack>
