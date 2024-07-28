@@ -1,14 +1,10 @@
-# Template Code Base
+# Earth Guardian
 
-## Logo
-<!-- LOGO App here -->
 ## Demo App
 <!-- Link Vid Demo -->
 
 ## Table of Contents
-- [Template Code Base](#template-code-base)
-  - [Upgrade version](#upgrade-version)
-  - [Logo](#logo)
+- [Earth Guardian](#earth-guardian)
   - [Demo App](#demo-app)
   - [Table of Contents](#table-of-contents)
   - [About](#about)
@@ -26,6 +22,13 @@
 
 ## Screenshots
 <!-- Screenshot image of some screen and place in ~/images folder from root app -->
+<img src="images/image_demo1.png" width="45%" alt='screen1'>
+<img src="images/image_demo2.png" width="45%" alt='screen2'>
+<img src="images/image_demo3.png" width="45%" alt='screen3'>
+<img src="images/image_demo4.png" width="45%" alt='screen4'>
+<img src="images/image_demo5.png" width="45%" alt='screen5'>
+<img src="images/image_demo6.png" width="45%" alt='screen6'>
+
 
 ## Getting Started
 
