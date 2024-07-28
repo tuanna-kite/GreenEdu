@@ -22,12 +22,12 @@
 
 ## Screenshots
 <!-- Screenshot image of some screen and place in ~/images folder from root app -->
-<img src="images/image_demo1.png" width="45%" alt='screen1'>
-<img src="images/image_demo2.png" width="45%" alt='screen2'>
-<img src="images/image_demo3.png" width="45%" alt='screen3'>
-<img src="images/image_demo4.png" width="45%" alt='screen4'>
-<img src="images/image_demo5.png" width="45%" alt='screen5'>
-<img src="images/image_demo6.png" width="45%" alt='screen6'>
+<img src="images/image_demo1.png" width="40%" style="inline-block" alt='screen1'>
+<img src="images/image_demo2.png" width="40%" style="inline-block" alt='screen2'>
+<img src="images/image_demo3.png" width="40%" style="inline-block" alt='screen3'>
+<img src="images/image_demo4.png" width="40%" style="inline-block" alt='screen4'>
+<img src="images/image_demo5.png" width="40%" style="inline-block" alt='screen5'>
+<img src="images/image_demo6.png" width="40%" style="inline-block" alt='screen6'>
 
 
 ## Getting Started
