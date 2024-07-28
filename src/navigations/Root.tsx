@@ -12,6 +12,7 @@ import Detail from "../screens/detail/Detail";
 import PracticeDetail from "../screens/practice/PracticeDetail";
 import { UseTokenColor } from "../hook/UseTokenColor";
 import SplashScreen from "../screens/auth/SplashScreen";
+import DetailActivity from "../screens/detail/DetailActivity";
 
 const Stack = createNativeStackNavigator<RootStackParams>();
 
@@ -31,6 +32,8 @@ const Root = () => {
           <Stack.Screen name="SplashScreen" component={SplashScreen} />
           <Stack.Screen name="TabNavigation" component={TabNavigation} />
           <Stack.Screen name="Detail" component={Detail} />
+          <Stack.Screen name="DetailActivity" component={DetailActivity} />
+
           <Stack.Screen
             name="QuizzResult"
             component={QuizzResult}

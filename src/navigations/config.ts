@@ -10,6 +10,9 @@ export type RootStackParams = {
     id:string;
     type: EDataType
   };
+  DetailActivity: {
+    id:string;
+  };
 };
 
 export type BottomTabsParams = {

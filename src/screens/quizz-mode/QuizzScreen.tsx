@@ -26,7 +26,7 @@ const QuizzScreen = () => {
   const navigation = useNavigation<any>();
   const [currQues, setCurrQues] = useState(0);
   const level: string = route.params.level ? route.params.level : "easy";
-  const [quizzes] = useState(getRandomArray(quizzData[level], 4));
+  const [quizzes] = useState(getRandomArray(quizzData[level], 6));
 
   const onPress = (i: number) => () => {
     const { ans } = quizzes[currQues];

@@ -301,16 +301,41 @@ export const story: IObjectData = {
     title: "Trách nhiệm của học sinh trong việc bảo vệ môi trường sống",
     description:
       "Tình trạng mà môi trường sống của chúng ta bị ô nhiễm và suy giảm chất lượng do sự tồn tại của các chất gây ô nhiễm",
+    content: [
+      {
+        title: "Học tập và tìm hiểu về môi trường",
+        body: [
+          "Ở một ngôi trường nhỏ nằm trong một thị trấn yên bình, có một nhóm học sinh rất yêu thiên nhiên và mong muốn làm điều gì đó để bảo vệ môi trường. Nhóm gồm ba bạn là Minh, Lan và Hùng, luôn cảm thấy buồn khi thấy rác thải xung quanh trường học và khu dân cư ngày càng nhiều.",
+          'Một ngày, sau khi thấy công viên gần trường bị ngập rác sau một buổi dã ngoại, ba bạn quyết định bắt đầu một chiến dịch bảo vệ môi trường. Họ cùng nhau lên kế hoạch và đặt tên cho chiến dịch là "Hành động xanh".',
+          "Minh, người giỏi vẽ, đã thiết kế những tấm áp phích kêu gọi mọi người tham gia vào chiến dịch. Lan, với khả năng diễn đạt tốt, đã thuyết phục thầy cô giáo và các bạn học sinh trong lớp cùng tham gia. Hùng, với niềm đam mê công nghệ, đã tạo ra một trang blog nhỏ để chia sẻ các hoạt động của nhóm và kêu gọi sự ủng hộ từ cộng đồng mạng.",
+          "Chiến dịch bắt đầu bằng việc dọn dẹp khuôn viên trường học và công viên gần đó. Những ngày cuối tuần, các bạn học sinh tập trung nhau lại, trang bị găng tay và túi rác, cùng nhau nhặt rác và phân loại chúng. Họ còn trồng thêm cây xanh và chăm sóc các bồn hoa trong trường, biến những khu vực trống trải thành những góc xanh tươi mát.",
+          'Nhờ sự nhiệt tình và kiên trì của Minh, Lan và Hùng, chiến dịch "Hành động xanh" nhanh chóng lan rộng ra khắp trường. Các lớp học khác cũng bắt đầu tham gia, thậm chí các thầy cô và phụ huynh cũng không đứng ngoài cuộc. Những buổi nói chuyện về bảo vệ môi trường được tổ chức, các buổi triển lãm tranh vẽ về môi trường được dựng lên, và các cuộc thi tìm hiểu kiến thức môi trường cũng được tổ chức.',
+          "Không chỉ dừng lại ở việc làm sạch và xanh hóa môi trường xung quanh, các bạn học sinh còn lan tỏa tinh thần bảo vệ môi trường đến cộng đồng. Họ tổ chức các buổi tuyên truyền tại khu dân cư, khuyến khích mọi người sử dụng túi vải thay cho túi ni lông, và hướng dẫn cách phân loại rác thải tại nguồn.",
+          "Nhờ vào những nỗ lực không ngừng nghỉ của các bạn học sinh, thị trấn trở nên sạch sẽ hơn, cây cối xanh mát hơn và ý thức bảo vệ môi trường của mọi người cũng được nâng cao. Câu chuyện về Minh, Lan và Hùng đã trở thành nguồn cảm hứng cho nhiều bạn trẻ khác, góp phần tạo nên một thế hệ mới với ý thức bảo vệ môi trường mạnh mẽ và hành động thiết thực.",
+        ],
+        image: require("../assets/env/Nhat_rac.jpg"),
+      },
+    ],
     image: require("../assets/env/story1.png"),
-    content: [],
   },
   2: {
     id: 2,
     title: "Phong trào em yêu môi trường xanh",
     description:
       "Bao gồm việc ô nhiễm các nguồn nước như sông, ao hồ và nguồn nước ngầm bởi các chất gây ô nhiễm như chất hóa học, chất thải công nghiệp và nông nghiệp, và vi khuẩn từ nước thải.",
+    content: [
+      {
+        title: "Giữ gìn vệ sinh môi trường",
+        body: [
+          "Phong trào 'Em yêu môi trường' bắt đầu từ một nhóm học sinh tại một trường tiểu học ở thành phố nhỏ. Nhóm học sinh này, nhận thấy sự thay đổi tiêu cực trong môi trường xung quanh như rác thải ngày càng nhiều, cây cối bị chặt phá và không khí trở nên ô nhiễm hơn, đã quyết định hành động. Các em cùng nhau lên kế hoạch tổ chức một phong trào để nâng cao nhận thức và thúc đẩy hành động bảo vệ môi trường trong trường và cộng đồng xung quanh.",
+          "Các hoạt động của phong trào bao gồm việc tổ chức các buổi dọn dẹp vệ sinh khuôn viên trường và các khu vực công cộng, trồng cây xanh xung quanh trường, và tổ chức các buổi học về bảo vệ môi trường. Các em học sinh đã phân chia thành từng nhóm nhỏ, mỗi nhóm phụ trách một hoạt động cụ thể và cùng nhau thực hiện với sự hướng dẫn của các thầy cô giáo.",
+          "Phong trào nhanh chóng nhận được sự ủng hộ nhiệt tình từ phụ huynh, giáo viên và cả cộng đồng. Họ cùng tham gia vào các hoạt động và hỗ trợ các em bằng cách cung cấp cây giống, dụng cụ vệ sinh và các tài liệu giáo dục về môi trường. Nhờ vào những nỗ lực này, khuôn viên trường học trở nên xanh mát hơn, sạch sẽ hơn và bầu không khí cũng trong lành hơn.",
+          "Câu chuyện về phong trào 'Em yêu môi trường' không chỉ dừng lại ở việc làm sạch và xanh hóa môi trường xung quanh mà còn lan tỏa tinh thần bảo vệ môi trường đến nhiều trường học khác trong khu vực. Các trường học khác đã học hỏi và triển khai các hoạt động tương tự, tạo nên một phong trào rộng khắp, giúp nâng cao ý thức bảo vệ môi trường của thế hệ trẻ và góp phần bảo vệ hành tinh xanh của chúng ta.",
+        ],
+        image: require("../assets/env/Nhat_rac2.jpg"),
+      },
+    ],
     image: require("../assets/env/story2.png"),
-    content: [],
   },
 };
 
@@ -322,7 +347,8 @@ export interface IActivity {
   material: string[];
   instructions: Array<{
     title: string;
-    body: string;
+    body: string[];
+    image: string;
   }>;
   benefit: string[];
 }
@@ -334,31 +360,71 @@ export interface IObjectActivity {
 export const activity: IObjectActivity = {
   1: {
     id: 1,
-    title: "Tự làm bình hoa",
+    title: "Trồng cây bằng nhựa tái chế",
+    image:
+      "https://afamilycdn.com/150157425591193600/2020/8/15/bottle-farm-hydroponic-indoor-garden-602500-15974860178341141155425.gif",
     target: "Học sinh",
-    image: "",
-    material: ["Hoa", "Vỏ chai", "Đất", "Nước", "Cây", "Cây cảnh"],
+    material: [
+      "Chai nhựa",
+      "Đất trồng cây",
+      "Hạt giống hoặc cây giống",
+      "Sơn",
+      "Cọ vẽ",
+      "Kéo",
+      "Dao cắt",
+    ],
     instructions: [
       {
-        title: "Bước 1: Chuẩn bị",
-        body: "Chuẩn bị các nguyên liệu cần thiết",
+        title: "Bước 1: Chuẩn bị chai nhựa",
+        body: [
+          "Rửa sạch chai nhựa và để khô.",
+          "Cắt phần trên của chai để tạo miệng rộng cho việc trồng cây. Để an toàn, hãy nhờ người lớn giúp đỡ khi sử dụng dao hoặc kéo.",
+        ],
+        image: "https://example.com/images/step1.jpg",
       },
       {
-        title: "Bước 2: Trồng cây",
-        body: "Trồng cây vào trong bình",
+        title: "Bước 2: Tạo lỗ thoát nước",
+        body: [
+          "Dùng kéo hoặc dao cắt một vài lỗ nhỏ ở đáy chai để giúp thoát nước khi tưới cây.",
+        ],
+        image: "https://example.com/images/step2.jpg",
       },
       {
-        title: "Bước 3: Cắm hoa",
-        body: "Cắm hoa vào bình",
+        title: "Bước 3: Trang trí chai nhựa (tuỳ chọn)",
+        body: [
+          "Học sinh có thể sơn và trang trí chai nhựa theo ý thích để làm cho chậu cây thêm sinh động và đẹp mắt.",
+        ],
+        image: "https://example.com/images/step3.jpg",
       },
       {
-        title: "Bước 4: Đổ nước",
-        body: "Đổ nước vào bình",
+        title: "Bước 4: Trồng cây",
+        body: [
+          "Đổ một lớp đất trồng vào chai nhựa, khoảng 2/3 chiều cao của chai.",
+          "Nếu trồng từ hạt giống: Gieo hạt giống vào đất và phủ một lớp đất mỏng lên trên.",
+          "Nếu trồng từ cây giống: Đặt cây giống vào giữa chai và bổ sung đất xung quanh rễ cây. Nén nhẹ đất để cây đứng vững.",
+        ],
+        image: "https://example.com/images/step4.jpg",
+      },
+      {
+        title: "Bước 5: Tưới nước",
+        body: [
+          "Tưới nước đủ ẩm cho đất, nhưng không quá nhiều để tránh làm úng rễ cây. Theo dõi và tưới nước định kỳ tuỳ theo nhu cầu của loại cây trồng.",
+        ],
+        image: "https://example.com/images/step5.jpg",
+      },
+      {
+        title: "Bước 6: Chăm sóc cây",
+        body: [
+          "Đặt chai nhựa ở nơi có đủ ánh sáng mặt trời.",
+          "Theo dõi cây thường xuyên để đảm bảo cây phát triển tốt, tưới nước đều đặn và bón phân (nếu cần).",
+        ],
+        image: "https://example.com/images/step6.jpg",
       },
     ],
     benefit: [
-      "Học sinh sẽ biết cách chăm sóc cây cảnh",
-      "Học sinh sẽ biết cách làm hoa",
+      "Giáo dục về tái chế: Học sinh sẽ hiểu được tầm quan trọng của việc tái chế và giảm thiểu rác thải nhựa.",
+      "Bảo vệ môi trường: Trồng cây giúp làm xanh sạch môi trường, cải thiện chất lượng không khí.",
+      "Kỹ năng sống: Học sinh học được cách chăm sóc cây, trách nhiệm và kiên nhẫn.",
     ],
   },
 };

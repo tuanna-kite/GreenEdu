@@ -8,8 +8,9 @@ import { Image, Box, VStack, Text, HStack } from "@gluestack-ui/themed";
 import React from "react";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { BottomTabsParams, RootStackParams } from "../../navigations/config";
+import { activity, IActivity } from "../../db/slide-data";
 
-const PracticeCard = () => {
+const PracticeCard = ({ item, index }: { item: IActivity; index: number }) => {
   return (
     <HStack
       alignItems="center"
@@ -33,7 +34,7 @@ const PracticeCard = () => {
       </Box>
       <VStack gap="$1" flex={1}>
         <Text fontWeight="$semibold" fontSize={"$sm"} color="$coolGray800">
-          Bài 1: Ô tô chạy
+          Bài {index}: {item.title}
         </Text>
         <Text
           fontWeight="$normal"
@@ -41,7 +42,7 @@ const PracticeCard = () => {
           color="$coolGray500"
           numberOfLines={1}
         >
-          Viết chương trình mô tả chiếc ô tô chuyển động trên màn hình
+          {item.target}
         </Text>
       </VStack>
     </HStack>
@@ -53,9 +54,13 @@ type Props = {} & NativeStackScreenProps<
   "Practice"
 >;
 
+const activityList = Object.values(activity);
+
 const Practice = ({ navigation }: Props) => {
-  const onPracticeDetail = () => {
-    navigation.navigate("PracticeDetail");
+  const onPracticeDetail = (id: any) => {
+    navigation.navigate("DetailActivity", {
+      id: id,
+    });
   };
   return (
     <VStack
@@ -68,9 +73,14 @@ const Practice = ({ navigation }: Props) => {
       {Platform.OS == "android" && <StatusBar barStyle="light-content" />}
       <HStack flexWrap="wrap">
         <Box w="$full" mb={"$4"}>
-          <TouchableOpacity onPress={onPracticeDetail}>
-            <PracticeCard />
-          </TouchableOpacity>
+          {activityList.map((activity, index) => (
+            <TouchableOpacity
+              key={activity.id}
+              onPress={() => onPracticeDetail(activity.id)}
+            >
+              <PracticeCard item={activity} index={index + 1} />
+            </TouchableOpacity>
+          ))}
         </Box>
       </HStack>
     </VStack>
