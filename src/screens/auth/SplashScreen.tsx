@@ -27,12 +27,12 @@ const SplashScreen = (props: Props) => {
       resizeMode="contain"
       py={32}
       justifyContent="flex-end"
-      source={require("../../assets/env/splash-bg.png")}
+      source={require("../../assets/env/splash-bg1.png")}
     >
       <StatusBar style="light" />
       <VStack px="$6">
         <Button onPress={onNext}>
-          <ButtonText>Tiếp</ButtonText>
+          <ButtonText>Bắt đầu</ButtonText>
         </Button>
       </VStack>
     </ImageBackground>

@@ -43,6 +43,7 @@ interface ITabData {
   title: string;
   iconName: keyof typeof Ionicons.glyphMap;
   component: any;
+  headerShown: boolean;
 }
 
 export const TabData: ITabData[] = [
@@ -52,6 +53,7 @@ export const TabData: ITabData[] = [
     title: "Bài viết",
     iconName: "home",
     component: Home,
+    headerShown: false,
   },
   {
     id: 2,
@@ -59,6 +61,7 @@ export const TabData: ITabData[] = [
     title: "Trò chơi",
     iconName: "apps",
     component: Quizz,
+    headerShown: false,
   },
   {
     id: 3,
@@ -66,6 +69,7 @@ export const TabData: ITabData[] = [
     title: "Hoạt động",
     iconName: "information-circle-sharp",
     component: Practice,
+    headerShown: true,
   },
   {
     id: 4,
@@ -73,6 +77,7 @@ export const TabData: ITabData[] = [
     title: "Câu chuyện",
     iconName: "extension-puzzle",
     component: Puzzle,
+    headerShown: true,
   },
 ];
 
@@ -99,7 +104,7 @@ const TabNavigation = () => {
                 title={tab.title}
               />
             ),
-            headerShown: true,
+            headerShown: tab.headerShown,
             title: tab.title,
             headerStyle: {
               backgroundColor: colors.white,

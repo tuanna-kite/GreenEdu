@@ -3,71 +3,92 @@ import {
   Platform,
   StatusBar,
   TouchableOpacity,
+  SafeAreaView,
+  View,
+  useWindowDimensions,
 } from "react-native";
-import { Image, Box, Text, VStack } from "@gluestack-ui/themed";
+import {
+  Image,
+  Box,
+  Text,
+  VStack,
+  ScrollView,
+  HStack,
+} from "@gluestack-ui/themed";
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
-
-interface LevelInfo {
-  text: string;
-  level: string;
-}
-
-const levels: LevelInfo[] = [
-  { text: "Dễ", level: "easy" },
-  { text: "Trung Bình", level: "medium" },
-  { text: "Khó", level: "hard" },
-];
-
-const OPTION_COLOR = ["#78C819", "#FFA800", "#EF4444"];
+import Animated, {
+  useAnimatedScrollHandler,
+  useSharedValue,
+} from "react-native-reanimated";
+import { quizzSlideImg } from "../../db/animated-slide";
+import Pagination from "./components/Pagination";
 
 const Quizz = () => {
+  const { width: SCREEN_WIDTH } = useWindowDimensions();
   const navigation = useNavigation<any>();
+  const x = useSharedValue(0);
+  const onScroll = useAnimatedScrollHandler({
+    onScroll: (event) => {
+      x.value = event.contentOffset.x;
+    },
+  });
   return (
-    <VStack
-      flex={1}
-      gap={"$12"}
-      px={"$8"}
-      py={"$4"}
-      justifyContent="space-between"
-      bg="$white"
-    >
-      {Platform.OS == "android" && <StatusBar barStyle="light-content" />}
-      <Image
-        source={require("../../assets/env/question_logo.png")}
-        w="$full"
-        height={200}
-        resizeMode="contain"
-        alt="logo"
-      />
-      <VStack gap={"$6"}>
-        {levels.map((info, index) => (
-          <TouchableOpacity
-            key={info.level}
-            onPress={() =>
-              navigation.navigate("QuizzScreen", { level: info.level })
-            }
-            style={{ width: "100%" }}
-          >
-            <Box
-              backgroundColor={OPTION_COLOR[index]}
-              py={"$3"}
-              alignItems="center"
-              rounded={"$xl"}
-            >
-              <Text fontWeight="$semibold" color="$white" fontSize={"$2xl"}>
-                {info.text}
-              </Text>
-            </Box>
-          </TouchableOpacity>
-        ))}
+    <ScrollView flex={1} bg="$white" showsVerticalScrollIndicator={false}>
+      <SafeAreaView style={{ paddingTop: StatusBar.currentHeight }} />
+      <VStack flex={1} p={"$4"} gap={"$4"} bg="$white">
+        <VStack justifyContent="space-between" mb={"$4"}>
+          <Text fontWeight="$semibold" fontSize={"$3xl"} color="$black">
+            Câu hỏi
+          </Text>
+          <Text fontWeight="$semibold" fontSize={"$lg"} color="$coolGray500">
+            Lựa chọn cấp độ câu hỏi
+          </Text>
+        </VStack>
       </VStack>
-      <Box>
-        <Text textAlign="center" fontSize={"$sm"} color="$coolGray500">
-          Lựa chọn mức độ câu hỏi
+
+      <Animated.FlatList
+        onScroll={onScroll}
+        data={quizzSlideImg}
+        renderItem={({ item, index }) => {
+          return (
+            <TouchableOpacity
+              onPress={() =>
+                navigation.navigate("QuizzScreen", { level: item.level })
+              }
+            >
+              <View style={{ width: SCREEN_WIDTH, alignItems: "center" }}>
+                <Image
+                  source={item.imgSrc}
+                  style={{
+                    width: SCREEN_WIDTH - 32,
+                    height: (426 / 343) * SCREEN_WIDTH - 32,
+                    justifyContent: "flex-end",
+                    alignItems: "flex-end",
+                  }}
+                  alt="image"
+                  resizeMode="contain"
+                />
+              </View>
+            </TouchableOpacity>
+          );
+        }}
+        keyExtractor={(item) => item.id.toString()}
+        scrollEventThrottle={16}
+        horizontal={true}
+        bounces={false}
+        pagingEnabled={true}
+        showsHorizontalScrollIndicator={false}
+      />
+      <Box px="$8" my="$4">
+        <Pagination data={quizzSlideImg} x={x} />
+        <Text color="$coolGray500" fontSize={"$md"}>
+          Môi trường bao gồm các yếu tố tự nhiên và yếu tố vật chất nhân tạo
+          quan hệ mật thiết với nhau, bao quanh con người, có ảnh hưởng tới đời
+          sống, sản xuất, sự tồn tại, phát triển của con người và thiên nhiên.
         </Text>
       </Box>
-    </VStack>
+    </ScrollView>
   );
 };
 
