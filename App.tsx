@@ -10,7 +10,7 @@ export default function App() {
   return (
     <GluestackUIProvider config={config}>
       <Provider store={store}>
-        {Platform.OS == "android" && <StatusBar barStyle="light-content" />}
+        {Platform.OS == "android" && <StatusBar barStyle="dark-content" />}
         <Root />
       </Provider>
     </GluestackUIProvider>

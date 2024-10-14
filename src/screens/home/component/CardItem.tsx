@@ -18,6 +18,7 @@ const CardItem = ({ item, type }: Props) => {
   return (
     <TouchableOpacity
       key={item.id}
+      activeOpacity={0.8}
       onPress={() =>
         navigation.navigate("Detail", {
           id: item.id,
