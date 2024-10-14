@@ -4,16 +4,16 @@ import {
   StatusBar,
   StyleSheet,
   ViewToken,
-} from "react-native";
-import React from "react";
-import { HStack, ScrollView, Text, VStack } from "@gluestack-ui/themed";
+} from 'react-native';
+import React from 'react';
+import { HStack, ScrollView, Text, VStack } from '@gluestack-ui/themed';
 import Animated, {
   useAnimatedRef,
   useAnimatedScrollHandler,
   useSharedValue,
-} from "react-native-reanimated";
-import { homeData, OnboardingData } from "../../db/animated-slide";
-import AnimatedCard from "./component/AnimatedCard";
+} from 'react-native-reanimated';
+import { homeData, OnboardingData } from '../../db/animated-slide';
+import AnimatedCard from './component/AnimatedCard';
 
 type Props = {};
 
@@ -38,11 +38,12 @@ const Home = (props: Props) => {
   });
 
   return (
-    <ScrollView flex={1} bg="$white" showsVerticalScrollIndicator={false}>
+    <ScrollView flex={1} bg='$white' showsVerticalScrollIndicator={false}>
+      <StatusBar barStyle='light-content' backgroundColor='#E4301E' />
       <SafeAreaView style={{ paddingTop: StatusBar.currentHeight }} />
-      <VStack flex={1} p={"$4"} gap={"$4"} bg="$white">
-        <HStack justifyContent="space-between" mb={"$4"}>
-          <Text fontWeight="$semibold" fontSize={"$3xl"} color="$primary600">
+      <VStack flex={1} p={'$4'} gap={'$4'} bg='$white'>
+        <HStack justifyContent='space-between' mb={'$4'}>
+          <Text fontWeight='$semibold' fontSize={'$3xl'} color='$primary600'>
             EcoAlert
           </Text>
         </HStack>

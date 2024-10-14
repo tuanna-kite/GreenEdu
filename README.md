@@ -1,51 +1,30 @@
-# Earth Guardian
+<img src="https://github.com/tuanna-kite/GreenEdu/blob/main/demo/app-icon.jpg?raw=true" width="100" height="100">
 
-## Demo App
-<!-- Link Vid Demo -->
+# **Eco Alert Application**
 
-## Table of Contents
-- [Earth Guardian](#earth-guardian)
-  - [Demo App](#demo-app)
-  - [Table of Contents](#table-of-contents)
-  - [About](#about)
-  - [Features](#features)
-  - [Screenshots](#screenshots)
-  - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
+**Eco Alert** is an educational app designed to teach children about the environment and the importance of environmental protection. With engaging lessons and fun activities, GreenEdu helps children understand the world around them and how they can contribute to saving the planet.
 
-## About
-<!-- App description -->
+## [DEMO - DRIVE](https://drive.google.com/drive/folders/1AOpAUEI-LFie0AlkpXxkQpDal7joMSg2?usp=sharing)
 
-## Features
-<!-- Your features app -->
+## Key Features
 
-## Screenshots
-<!-- Screenshot image of some screen and place in ~/images folder from root app -->
-<img src="images/image_demo1.png" width="40%" style="inline-block" alt='screen1'>
-<img src="images/image_demo2.png" width="40%" style="inline-block" alt='screen2'>
-<img src="images/image_demo3.png" width="40%" style="inline-block" alt='screen3'>
-<img src="images/image_demo4.png" width="40%" style="inline-block" alt='screen4'>
-<img src="images/image_demo5.png" width="40%" style="inline-block" alt='screen5'>
-<img src="images/image_demo6.png" width="40%" style="inline-block" alt='screen6'>
+- **Topic-Based Learning**: Lectures are divided into various topics such as land environment, water environment, and more, making it easy for children to explore different aspects of environmental science.
+- **Curated Content**: All lectures are carefully selected and developed before being posted on the app, ensuring that children receive accurate and quality educational materials.
+  ![DEMO](https://github.com/tuanna-kite/GreenEdu/blob/main/demo/demo1.png?raw=true)
 
+- **Interactive Quizzes**: After each lesson, children can take multiple choice exercises to assess their understanding of the topic.
+  ![DEMO](https://github.com/tuanna-kite/GreenEdu/blob/main/demo/demo2.png?raw=true)
 
-## Getting Started
+- **Environmental Activities and Stories**: The app includes a collection of social activities related to environmental protection and inspiring stories that promote empathy and environmental awareness among children.
+  ![DEMO](https://github.com/tuanna-kite/GreenEdu/blob/main/demo/demo3.png?raw=true)
 
-### Prerequisites
+## Technology Stack
 
-- Node.Js: https://nodejs.org/en
-- Expo: https://docs.expo.dev/get-started/installation/
-- Yarn: https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable
+- **React Native**: Enables cross-platform development, ensuring GreenEdu works seamlessly on both iOS and Android devices.
 
-### Installation
+- **Redux Toolkits**: Manages the app's state efficiently, ensuring smooth interactions, including progress tracking and handling lessons and quizzes.
 
-- Clone the repository to your local machine
-- Install dependencies using npm or yarn
-- Run the app using `yarn start` or another suitable command
-
-```bash
-git clone <git url app>
-cd app_name
-yarn
-yarn start
+- **Supabase**:
+  - **Authentication**: Provides secure login and user management, allowing children to track their progress in the app.
+  - **Realtime Database**: Offers real-time updates on lesson completion, quiz results, and other interactions, ensuring a dynamic learning experience.
+  - **File Storage**: Handles the storage of lecture materials, quizzes, and other educational content, providing quick and easy access for users.
