@@ -1,15 +1,23 @@
+<img src="https://github.com/tuanna-kite/GreenEdu/blob/main/demo/app-icon.jpg?raw=true" width="100" height="100">
+
 # **GreenEdu Application**
 
 **GreenEdu** is an educational app designed to teach children about the environment and the importance of environmental protection. With engaging lessons and fun activities, GreenEdu helps children understand the world around them and how they can contribute to saving the planet.
+
+## [DEMO - DRIVE](https://drive.google.com/drive/folders/14AHE7sra4r7ZuGnD1gbgepaF5VbBCuKo?usp=drive_link)
 
 ## Key Features
 
 - **Topic-Based Learning**: Lectures are divided into various topics such as land environment, water environment, and more, making it easy for children to explore different aspects of environmental science.
 - **Curated Content**: All lectures are carefully selected and developed before being posted on the app, ensuring that children receive accurate and quality educational materials.
+![DEMO](https://github.com/tuanna-kite/GreenEdu/blob/main/demo/demo1.png?raw=true)
 
 - **Interactive Quizzes**: After each lesson, children can take multiple choice exercises to assess their understanding of the topic.
+![DEMO](https://github.com/tuanna-kite/GreenEdu/blob/main/demo/demo2.png?raw=true)
 
 - **Environmental Activities and Stories**: The app includes a collection of social activities related to environmental protection and inspiring stories that promote empathy and environmental awareness among children.
+
+![DEMO](https://github.com/tuanna-kite/GreenEdu/blob/main/demo/demo3.png?raw=true)
 
 ## Technology Stack
 
